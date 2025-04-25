@@ -9,7 +9,7 @@ app.use(cors()); // Allow frontend to access this server
 
 // Serve the resume file
 app.get("/resume", (req, res) => {
-  const filePath = path.join(__dirname, "resume.pdf");
+  const filePath = path.join(__dirname,'public', "resume.pdf");
   res.sendFile(filePath);
 });
 
